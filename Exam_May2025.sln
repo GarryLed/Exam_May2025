@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientAppointments", "PatientAppointments\PatientAppointments.csproj", "{1EDFE0E2-6A92-4EE4-9A6B-83370B448681}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataManagement", "DataManagement\DataManagement.csproj", "{29DB2BE6-9D92-4868-B83B-845DD5553D4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1EDFE0E2-6A92-4EE4-9A6B-83370B448681}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EDFE0E2-6A92-4EE4-9A6B-83370B448681}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EDFE0E2-6A92-4EE4-9A6B-83370B448681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29DB2BE6-9D92-4868-B83B-845DD5553D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29DB2BE6-9D92-4868-B83B-845DD5553D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29DB2BE6-9D92-4868-B83B-845DD5553D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29DB2BE6-9D92-4868-B83B-845DD5553D4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

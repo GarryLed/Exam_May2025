@@ -1,0 +1,22 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PatientAppointments"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="PatientAppointments.AppointmentWindow"
+        mc:Ignorable="d"
+        Title="AppointmentWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Appointment Date" HorizontalAlignment="Left" Margin="65,54,0,0" VerticalAlignment="Top"/>
+        <Label Content="Appointment Time&#xD;&#xA;" HorizontalAlignment="Left" Margin="434,54,0,0" VerticalAlignment="Top"/>
+        <Label Content="Notes&#xD;&#xA;" HorizontalAlignment="Left" Margin="65,120,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbxNotes" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="26,140,246,45"/>
+        <DatePicker x:Name="dpAppointmentDate" HorizontalAlignment="Left" Margin="232,53,0,0" VerticalAlignment="Top"/>
+
+        <materialDesign:TimePicker x:Name="timeAppointmentTime" HorizontalAlignment="Left" Margin="614,53,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAddApointment1" Content="Add" HorizontalAlignment="Left" Margin="669,253,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnUpdateAppointment" Content="Update" HorizontalAlignment="Left" Margin="669,329,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

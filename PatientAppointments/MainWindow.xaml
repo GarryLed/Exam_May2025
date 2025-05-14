@@ -4,9 +4,24 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PatientAppointments"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        Style="{StaticResource MaterialDesignWindow}" Loaded="Window_Loaded">
     <Grid>
-        
+        <Label Content="Patients" HorizontalAlignment="Left" Margin="24,32,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Patient Details" HorizontalAlignment="Left" Margin="445,39,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Appointments" HorizontalAlignment="Left" Margin="445,216,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="btnAddPatient" Content="Add" HorizontalAlignment="Left" Margin="715,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.492,-0.737" Width="65" Click="btnAddPatient_Click"/>
+        <Button x:Name="btnCreateNewAppointment" Content="Add" HorizontalAlignment="Left" Margin="715,228,0,0" VerticalAlignment="Top" Width="62" Click="btnCreateNewAppointment_Click"/>
+        <Button x:Name="btnEditAppointment" Content="Edit" HorizontalAlignment="Left" Margin="719,299,0,0" VerticalAlignment="Top" Width="57"/>
+        <TextBox materialDesign:HintAssist.Hint="Enter first name" x:Name="tbxFirstName" HorizontalAlignment="Left" Margin="445,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox  materialDesign:HintAssist.Hint="Enter Surname" x:Name="tbxSurname" HorizontalAlignment="Left" Margin="593,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
+        <TextBox  materialDesign:HintAssist.Hint="Enter phone number" x:Name="tbxPhoneNumber" HorizontalAlignment="Left" Margin="445,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="dpDOB" HorizontalAlignment="Left" Margin="635,111,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbxPatients" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="24,68,444,52" SelectionChanged="lbxPatients_SelectionChanged"/>
+        <ListBox x:Name="lbxAppointments" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="445,245,130,20" SelectionChanged="lbxAppointments_SelectionChanged"/>
+        <Label Content="DOB" HorizontalAlignment="Left" Margin="583,111,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+
     </Grid>
 </Window>
